@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Simple Calculator</title>
+</head>
+<header>
+    <h1>Calc</h1>
+</header>
+<body>
+    <label for="val1">Value 1</label>
+    <input type="number" name="val1" id="val1" value="">
+    <br><br>
+    <label for="val2">Value 2</label>
+    <input type="number" name="val2" id="val2" value="">
+    <br><br>
+    <input type="button" value="+" id="add" onclick="opr(this.id)">&nbsp;
+    <input type="button" value="*" id="mul" onclick="opr(this.id)">&nbsp;
+    <input type="button" value="-" id="sub" onclick="opr(this.id)">&nbsp;
+    <input type="button" value="/" id="div" onclick="opr(this.id)"><br><br>
+    <input type="text" name="res" id="res" value="" disabled>
+    <input type="button" value="RESET" onclick="re()">
+</body>
+</html>
